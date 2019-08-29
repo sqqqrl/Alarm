@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>24</title>
+		<link rel="stylesheet" type="text/css" href="./style.css">
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+
+			body {
+				margin: 0;
+		        background: #fafafa;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="clock">
+			<div>
+				<input type="text" class="inp-dsb inp-stl" disabled>
+				<input type="text" class="inp-dsb inp-stl" disabled>
+				<input type="text" class="inp-dsb inp-stl" disabled>
+			</div>
+			<div class="timer">
+				Select time: 
+				<br>
+				<div>
+					<input type="number" class="inp-crt inp-stl" maxlength="2" min="0" max="23">
+					<input type="number" class="inp-crt inp-stl" maxlength="2" min="0" max="59">
+					<input type="number" class="inp-crt inp-stl" maxlength="2" min="0" max="59">
+				</div>
+				<br>
+				<div class="error"></div>
+				<button class="btn-add btn-stl" disabled>ADD</button>
+
+			</div>
+			<div class="popup-div">
+				<div>
+					WAKE UP
+				</div>
+				<audio src="alarm.mp3"></audio>
+				<audio>
+				 <source src="alarm.mp3">
+				</audio>
+				<div>
+					<button class="btn-close btn-stl">OK</button>
+				</div>
+			</div>
+			<div class="success">
+				Alarm was added
+			</div>
+		</div>
+	<script src="script.js"></script>
+	</body>
+</html>
